@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High Gear Computers — Build Beyond Limits</title>
+  <meta name="description" content="Premium PC components for enthusiasts and builders. GPUs, CPUs, RAM, SSDs, Motherboards and more. Build your dream PC with High Gear Computers." />
+  <meta name="keywords" content="PC components, GPU, CPU, RAM, SSD, motherboard, gaming PC, PC builder, High Gear Computers" />
+  <meta property="og:title" content="High Gear Computers — Build Beyond Limits" />
+  <meta property="og:description" content="Premium PC components engineered for your next build." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <img src="HighGear_Computers_Logo_in_Blue-removebg-preview.png" alt="High Gear Computers Logo" class="logo-img" />
+        <span class="logo-text">HIGH <span class="logo-accent">GEAR</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#categories" class="nav-link">Components</a></li>
+        <li><a href="#build-matrix" class="nav-link">Build Matrix</a></li>
+        <li><a href="#deals" class="nav-link">Deals</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon-btn" aria-label="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
+        <button class="nav-icon-btn cart-btn" id="cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+        <button class="nav-icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Search Bar -->
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-bar-container">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Search components, brands, specs..." id="search-input" />
+        <button id="search-close">✕</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <canvas class="particles-canvas" id="particles-canvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="scan-line"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>NEXT-GEN PC COMPONENTS</span>
+        </div>
+        <h1 class="hero-headline">
+          BUILD<br/><span class="gradient-text">BEYOND</span><br/>LIMITS.
+        </h1>
+        <p class="hero-subtext">Premium PC components engineered for your next build. Curated for enthusiasts who demand nothing but the best.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Components</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Top Brands</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Support</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#categories" class="btn-primary">
+            <span>EXPLORE COMPONENTS</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#build-matrix" class="btn-secondary">
+            <span>BUILD YOUR PC</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper" id="hero-img-wrapper">
+          <!-- REALISTIC 3D HARDWARE / VIDEO FRAME -->
+          <div class="hero-3d-frame" id="hero-3d-frame">
+            <!-- Photorealistic 3D Render Layer -->
+            <div class="hero-media-layer hero-image-layer active" id="hero-image-layer">
+              <img src="hero-realistic-3d.jpg" alt="Realistic 3D PC Components - RTX 4090, Intel CPU, Trident RGB DDR5" id="hero-realistic-img" />
+              <div class="image-depth-reflection"></div>
+              <div class="image-lens-glare"></div>
+            </div>
+
+            <!-- 3D Hardware Build Video Layer -->
+            <div class="hero-media-layer hero-video-layer" id="hero-video-layer">
+              <video id="hero-main-video" loop muted playsinline poster="hero-realistic-3d.jpg">
+                <source src="hero-gaming-pc.webm" type="video/webm" />
+              </video>
+            </div>
+
+            <!-- Futuristic Framing Details -->
+            <div class="frame-corner tl"></div>
+            <div class="frame-corner tr"></div>
+            <div class="frame-corner bl"></div>
+            <div class="frame-corner br"></div>
+            <div class="frame-scan"></div>
+            <div class="frame-watermark">HGC // LAB-SYS-01</div>
+
+            <!-- Interactive HUD with Mode Switcher -->
+            <div class="frame-hud">
+              <div class="hud-status-wrap">
+                <span class="hud-dot"></span>
+                <span class="hud-text" id="hud-status-text">3D REALISTIC RENDER</span>
+              </div>
+              <div class="hud-mode-switch">
+                <button type="button" class="hud-btn active" id="btn-mode-image" title="Photorealistic 3D Hardware">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                  <span>3D RENDER</span>
+                </button>
+                <button type="button" class="hud-btn" id="btn-mode-video" title="Play 3D Build Video">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  <span>3D VIDEO</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="data-label dl-1">RTX 4090<br/><span>24GB GDDR6X</span></div>
+          <div class="data-label dl-2">i9-14900K<br/><span>5.8GHz Boost</span></div>
+          <div class="data-label dl-3">DDR5-7200<br/><span>64GB Kit</span></div>
+          <div class="data-label dl-4">PCIe Gen5<br/><span>14,000MB/s</span></div>
+          <div class="hero-glow-ring"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- LIVE HARDWARE SHOWCASE -->
+  <section class="showcase" id="showcase">
+    <div class="section-header">
+      <div class="section-tag">HARDWARE SHOWCASE</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Hardware</span></h2>
+      <p class="section-desc">Hover over any component to reveal technical specifications</p>
+    </div>
+    <div class="showcase-grid">
+      <div class="showcase-card" data-component="gpu">
+        <div class="showcase-card-inner">
+          <div class="showcase-img-wrap">
+            <img src="C:\Users\hanim\.gemini\antigravity-ide\brain\9bd78186-6085-408f-a1f9-bb66ff190949\gpu_product_1791719029261.jpg" alt="GPU" />
+            <div class="showcase-glow"></div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-tag">RTX 4090</div>
+            <h3>Graphics Card</h3>
+            <div class="showcase-specs">
+              <div class="spec-row"><span>VRAM</span><span>24GB GDDR6X</span></div>
+              <div class="spec-row"><span>Boost Clock</span><span>2.52 GHz</span></div>
+              <div class="spec-row"><span>TDP</span><span>450W</span></div>
+              <div class="spec-row"><span>Interface</span><span>PCIe 4.0 x16</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card" data-component="cpu">
+        <div class="showcase-card-inner">
+          <div class="showcase-img-wrap">
+            <img src="C:\Users\hanim\.gemini\antigravity-ide\brain\9bd78186-6085-408f-a1f9-bb66ff190949\cpu_product_1791719042488.jpg" alt="CPU" />
+            <div class="showcase-glow"></div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-tag">i9-14900K</div>
+            <h3>Processor</h3>
+            <div class="showcase-specs">
+              <div class="spec-row"><span>Cores</span><span>24C / 32T</span></div>
+              <div class="spec-row"><span>Boost Clock</span><span>6.0 GHz</span></div>
+              <div class="spec-row"><span>Cache</span><span>36MB L3</span></div>
+              <div class="spec-row"><span>TDP</span><span>253W</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card" data-component="ram">
+        <div class="showcase-card-inner">
+          <div class="showcase-img-wrap">
+            <img src="C:\Users\hanim\.gemini\antigravity-ide\brain\9bd78186-6085-408f-a1f9-bb66ff190949\ram_product_1791719057244.jpg" alt="RAM" />
+            <div class="showcase-glow"></div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-tag">DDR5-7200</div>
+            <h3>Memory</h3>
+            <div class="showcase-specs">
+              <div class="spec-row"><span>Capacity</span><span>64GB (2x32)</span></div>
+              <div class="spec-row"><span>Speed</span><span>7200 MT/s</span></div>
+              <div class="spec-row"><span>Latency</span><span>CL34</span></div>
+              <div class="spec-row"><span>Voltage</span><span>1.4V</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card" data-component="ssd">
+        <div class="showcase-card-inner">
+          <div class="showcase-img-wrap">
+            <img src="C:\Users\hanim\.gemini\antigravity-ide\brain\9bd78186-6085-408f-a1f9-bb66ff190949\ssd_product_1791719087608.jpg" alt="SSD" />
+            <div class="showcase-glow"></div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-tag">PCIe Gen5</div>
+            <h3>NVMe SSD</h3>
+            <div class="showcase-specs">
+              <div class="spec-row"><span>Capacity</span><span>2TB</span></div>
+              <div class="spec-row"><span>Read</span><span>14,000 MB/s</span></div>
+              <div class="spec-row"><span>Write</span><span>12,000 MB/s</span></div>
+              <div class="spec-row"><span>Interface</span><span>M.2 2280</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="showcase-card" data-component="mobo">
+        <div class="showcase-card-inner">
+          <div class="showcase-img-wrap">
+            <img src="C:\Users\hanim\.gemini\antigravity-ide\brain\9bd78186-6085-408f-a1f9-bb66ff190949\motherboard_product_1791719101872.jpg" alt="Motherboard" />
+            <div class="showcase-glow"></div>
+          </div>
+          <div class="showcase-info">
+            <div class="showcase-tag">Z790 APEX</div>
+            <h3>Motherboard</h3>
+            <div class="showcase-specs">
+              <div class="spec-row"><span>Socket</span><span>LGA1700</span></div>
+              <div class="spec-row"><span>Chipset</span><span>Z790</span></div>
+              <div class="spec-row"><span>Form Factor</span><span>ATX</span></div>
+              <div class="spec-row"><span>DDR5 Slots</span><span>4x DIMM</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPONENT CATEGORIES -->
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <div class="section-tag">BROWSE BY TYPE</div>
+      <h2 class="section-title">Component <span class="gradient-text">Categories</span></h2>
+      <p class="section-desc">Every part you need to build your perfect machine</p>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card" data-cat="gpu">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="22" width="64" height="36" rx="4" stroke="currentColor" stroke-width="2"/>
+            <rect x="16" y="30" width="20" height="20" rx="2" fill="currentColor" opacity="0.3"/>
+            <circle cx="26" cy="40" r="6" stroke="currentColor" stroke-width="2"/>
+            <line x1="46" y1="30" x2="46" y2="50" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="52" y1="30" x2="52" y2="50" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="58" y1="30" x2="58" y2="50" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="16" y="56" width="4" height="8" rx="1" fill="currentColor"/>
+            <rect x="24" y="56" width="4" height="8" rx="1" fill="currentColor"/>
+            <rect x="32" y="56" width="4" height="8" rx="1" fill="currentColor"/>
+            <rect x="40" y="56" width="4" height="8" rx="1" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Graphics Cards</h3>
+          <p>High-performance GPUs for gaming, rendering & AI workloads</p>
+          <span class="cat-count">48 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="cpu">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" width="40" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+            <rect x="28" y="28" width="24" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="28" y1="14" x2="28" y2="20" stroke="currentColor" stroke-width="2"/>
+            <line x1="36" y1="14" x2="36" y2="20" stroke="currentColor" stroke-width="2"/>
+            <line x1="44" y1="14" x2="44" y2="20" stroke="currentColor" stroke-width="2"/>
+            <line x1="52" y1="14" x2="52" y2="20" stroke="currentColor" stroke-width="2"/>
+            <line x1="28" y1="60" x2="28" y2="66" stroke="currentColor" stroke-width="2"/>
+            <line x1="36" y1="60" x2="36" y2="66" stroke="currentColor" stroke-width="2"/>
+            <line x1="44" y1="60" x2="44" y2="66" stroke="currentColor" stroke-width="2"/>
+            <line x1="52" y1="60" x2="52" y2="66" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="28" x2="20" y2="28" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="36" x2="20" y2="36" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="44" x2="20" y2="44" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="52" x2="20" y2="52" stroke="currentColor" stroke-width="2"/>
+            <line x1="60" y1="28" x2="66" y2="28" stroke="currentColor" stroke-width="2"/>
+            <line x1="60" y1="36" x2="66" y2="36" stroke="currentColor" stroke-width="2"/>
+            <line x1="60" y1="44" x2="66" y2="44" stroke="currentColor" stroke-width="2"/>
+            <line x1="60" y1="52" x2="66" y2="52" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Processors</h3>
+          <p>Intel Core & AMD Ryzen CPUs for every performance tier</p>
+          <span class="cat-count">36 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="mobo">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="8" y="8" width="64" height="64" rx="4" stroke="currentColor" stroke-width="2"/>
+            <rect x="16" y="16" width="20" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="44" y="16" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="44" y="28" width="12" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="16" y="44" width="48" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="16" y="54" width="48" height="6" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="36" cy="26" r="4" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Motherboards</h3>
+          <p>Z790, X670E, B650 platforms for Intel & AMD systems</p>
+          <span class="cat-count">52 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="ram">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="24" width="52" height="32" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="20" y="30" width="6" height="20" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="30" y="30" width="6" height="20" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="40" y="30" width="6" height="20" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="50" y="30" width="6" height="20" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="14" y="56" width="52" height="4" rx="2" fill="currentColor" opacity="0.5"/>
+            <path d="M22 24 L22 18 M30 24 L30 18 M38 24 L38 18 M46 24 L46 18 M54 24 L54 18" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Memory (RAM)</h3>
+          <p>DDR5 & DDR4 kits with RGB and XMP/EXPO profiles</p>
+          <span class="cat-count">44 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="ssd">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="28" width="60" height="24" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="18" y="34" width="10" height="12" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="32" y="34" width="6" height="5" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="42" y="34" width="6" height="5" rx="1" fill="currentColor" opacity="0.4"/>
+            <rect x="52" y="34" width="10" height="12" rx="1" fill="currentColor" opacity="0.4"/>
+            <path d="M10 50 L70 50" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+            <circle cx="66" cy="40" r="4" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Storage</h3>
+          <p>NVMe SSDs up to 14,000 MB/s for lightning-fast load times</p>
+          <span class="cat-count">38 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="psu">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="16" width="60" height="48" rx="4" stroke="currentColor" stroke-width="2"/>
+            <circle cx="40" cy="40" r="12" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="40" cy="40" r="6" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M40 28 L40 22 M40 52 L40 58 M28 40 L22 40 M52 40 L58 40" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="60" y="28" width="6" height="4" rx="1" fill="currentColor" opacity="0.5"/>
+            <rect x="60" y="36" width="6" height="4" rx="1" fill="currentColor" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Power Supply</h3>
+          <p>80+ Gold, Platinum & Titanium certified PSUs up to 1600W</p>
+          <span class="cat-count">28 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="cooling">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="28" stroke="currentColor" stroke-width="2"/>
+            <circle cx="40" cy="40" r="8" stroke="currentColor" stroke-width="2"/>
+            <path d="M40 12 Q48 24 40 32 Q32 24 40 12Z" fill="currentColor" opacity="0.4"/>
+            <path d="M68 40 Q56 48 48 40 Q56 32 68 40Z" fill="currentColor" opacity="0.4"/>
+            <path d="M40 68 Q32 56 40 48 Q48 56 40 68Z" fill="currentColor" opacity="0.4"/>
+            <path d="M12 40 Q24 32 32 40 Q24 48 12 40Z" fill="currentColor" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>Cooling</h3>
+          <p>AIO liquid coolers and premium air cooling solutions</p>
+          <span class="cat-count">34 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+
+      <div class="cat-card" data-cat="case">
+        <div class="cat-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="16" y="8" width="40" height="64" rx="4" stroke="currentColor" stroke-width="2"/>
+            <rect x="56" y="18" width="8" height="44" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="22" y="16" width="28" height="18" rx="2" stroke="currentColor" stroke-width="1.5" fill="currentColor" opacity="0.1"/>
+            <rect x="22" y="38" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="28" cy="44" r="3" fill="currentColor" opacity="0.5"/>
+            <rect x="38" y="40" width="8" height="2" rx="1" fill="currentColor" opacity="0.5"/>
+            <rect x="38" y="45" width="6" height="2" rx="1" fill="currentColor" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="cat-content">
+          <h3>PC Cases</h3>
+          <p>Mid-tower, full-tower & ITX cases with premium build quality</p>
+          <span class="cat-count">26 Products</span>
+        </div>
+        <div class="cat-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </div>
+        <div class="cat-bg-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products" id="deals">
+    <div class="section-header">
+      <div class="section-tag">TOP PICKS</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Products</span></h2>
+      <p class="section-desc">Hand-picked components from the world's leading PC hardware brands</p>
+    </div>
+    <div class="products-filter">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="gpu">GPU</button>
+      <button class="filter-btn" data-filter="cpu">CPU</button>
+      <button class="filter-btn" data-filter="ram">RAM</button>
+      <button class="filter-btn" data-filter="ssd">SSD</button>
+      <button class="filter-btn" data-filter="mobo">Motherboard</button>
+    </div>
+    <div class="products-grid" id="products-grid">
+      <!-- Products injected by JS -->
+    </div>
+    <div class="load-more-wrap">
+      <button class="btn-outline" id="load-more-btn">LOAD MORE PRODUCTS</button>
+    </div>
+  </section>
+
+  <!-- BUILD MATRIX -->
+  <section class="build-matrix" id="build-matrix">
+    <div class="bm-bg-grid"></div>
+    <div class="section-header">
+      <div class="section-tag">SYSTEM BUILDER</div>
+      <h2 class="section-title">BUILD <span class="gradient-text">MATRIX</span></h2>
+      <p class="section-desc">Configure your perfect system — real-time compatibility & price calculation</p>
+    </div>
+    <div class="bm-container">
+      <div class="bm-selector">
+        <div class="bm-steps">
+          <!-- Component steps injected by JS -->
+        </div>
+      </div>
+      <div class="bm-panel">
+        <div class="bm-status-header">
+          <div class="bm-status-dot"></div>
+          <span>BUILD STATUS</span>
+          <div class="bm-status-line"></div>
+        </div>
+        <div class="bm-component-status" id="bm-status-list">
+          <!-- Status items injected by JS -->
+        </div>
+        <div class="bm-metrics">
+          <div class="bm-metric">
+            <span class="metric-label">COMPATIBILITY</span>
+            <div class="metric-bar">
+              <div class="metric-fill" id="compat-fill" style="width: 0%"></div>
+            </div>
+            <span class="metric-value" id="compat-value">—</span>
+          </div>
+          <div class="bm-metric">
+            <span class="metric-label">POWER DRAW</span>
+            <div class="metric-bar">
+              <div class="metric-fill power-fill" id="power-fill" style="width: 0%"></div>
+            </div>
+            <span class="metric-value" id="power-value">— W</span>
+          </div>
+        </div>
+        <div class="bm-total">
+          <span class="total-label">ESTIMATED BUILD</span>
+          <span class="total-price" id="bm-total-price">₹0</span>
+        </div>
+        <button class="btn-primary bm-add-btn" id="bm-add-all">
+          <span>ADD ALL TO CART</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/></svg>
+        </button>
+        <button class="btn-outline bm-reset-btn" id="bm-reset">RESET BUILD</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / TRUST SECTION -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <div class="section-tag">OUR MISSION</div>
+        <h2 class="section-title">Engineered for <span class="gradient-text">Builders</span></h2>
+        <p class="about-text">High Gear Computers was founded by enthusiasts for enthusiasts. We curate only the finest PC components from verified suppliers worldwide, ensuring every component meets our strict quality standards before reaching your hands.</p>
+        <p class="about-text">Whether you're building a workstation, gaming rig, or content creation machine — we have the parts and expertise to make your vision a reality.</p>
+        <a href="mailto:highgearcomputers@gmail.com" class="btn-primary">
+          <span>GET IN TOUCH</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+        </a>
+      </div>
+      <div class="about-right">
+        <div class="trust-cards">
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Verified Authentic</h4>
+            <p>Every product sourced from authorized distributors and brand partners</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4>Fast Dispatch</h4>
+            <p>Orders processed within 24 hours with premium packaging</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h4>Expert Support</h4>
+            <p>Build consultation & technical support from hardware enthusiasts</p>
+          </div>
+          <div class="trust-card">
+            <div class="trust-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h4>Customer First</h4>
+            <p>Hassle-free returns and dedicated after-sales care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER / CTA BAND -->
+  <section class="cta-band">
+    <div class="cta-grid-overlay"></div>
+    <div class="cta-content">
+      <h2>Stay ahead of the <span class="gradient-text">curve.</span></h2>
+      <p>Get exclusive deals, new product alerts, and build guides delivered straight to your inbox.</p>
+      <div class="newsletter-form">
+        <input type="email" placeholder="your@email.com" id="newsletter-email" />
+        <button class="btn-primary" id="newsletter-btn">
+          <span>SUBSCRIBE</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="HighGear_Computers_Logo_in_Blue-removebg-preview.png" alt="High Gear Computers" class="footer-logo" />
+        <p>Premium PC components for builders who refuse to compromise.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X" class="social-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l16 16M4 20L20 4"/></svg>
+          </a>
+        </div>
+        <a href="mailto:highgearcomputers@gmail.com" class="footer-email">highgearcomputers@gmail.com</a>
+      </div>
+      <div class="footer-links-group">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">All Components</a></li>
+          <li><a href="#">Graphics Cards</a></li>
+          <li><a href="#">Processors</a></li>
+          <li><a href="#">Memory</a></li>
+          <li><a href="#">Storage</a></li>
+          <li><a href="#">Deals & Offers</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Build</h4>
+        <ul>
+          <li><a href="#build-matrix">Build Matrix</a></li>
+          <li><a href="#">Gaming Builds</a></li>
+          <li><a href="#">Workstation Builds</a></li>
+          <li><a href="#">Budget Builds</a></li>
+          <li><a href="#">Build Guides</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns Policy</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 High Gear Computers. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>YOUR CART</h3>
+      <button id="cart-close">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cart-total-price">₹0</span>
+      </div>
+      <button class="btn-primary" style="width:100%">CHECKOUT</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+
+  <!-- HERO 3D MEDIA CONTROLLER -->
+  <script>
+  (function initHeroMedia() {
+    const frame = document.getElementById('hero-3d-frame');
+    const imgLayer = document.getElementById('hero-image-layer');
+    const vidLayer = document.getElementById('hero-video-layer');
+    const realImg = document.getElementById('hero-realistic-img');
+    const video = document.getElementById('hero-main-video');
+    const btnImage = document.getElementById('btn-mode-image');
+    const btnVideo = document.getElementById('btn-mode-video');
+    const statusText = document.getElementById('hud-status-text');
+
+    if (!frame) return;
+
+    let currentMode = 'image';
+
+    function setMode(mode) {
+      currentMode = mode;
+      if (mode === 'image') {
+        imgLayer.classList.add('active');
+        vidLayer.classList.remove('active');
+        btnImage.classList.add('active');
+        btnVideo.classList.remove('active');
+        statusText.textContent = '3D REALISTIC RENDER';
+        if (video) video.pause();
+      } else {
+        vidLayer.classList.add('active');
+        imgLayer.classList.remove('active');
+        btnVideo.classList.add('active');
+        btnImage.classList.remove('active');
+        statusText.textContent = 'LIVE RGB BUILD VIDEO';
+        if (video) {
+          video.currentTime = 0;
+          const playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(() => {
+              video.muted = true;
+              video.play();
+            });
+          }
+        }
+      }
+    }
+
+    if (btnImage) btnImage.addEventListener('click', () => setMode('image'));
+    if (btnVideo) btnVideo.addEventListener('click', () => setMode('video'));
+
+    // Interactive 3D Parallax Tilt Effect on mousemove
+    let targetRotateX = 0;
+    let targetRotateY = 0;
+    let currentRotateX = 0;
+    let currentRotateY = 0;
+
+    frame.addEventListener('mousemove', (e) => {
+      const rect = frame.getBoundingClientRect();
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+      targetRotateY = x * 14;
+      targetRotateX = -y * 14;
+    });
+
+    frame.addEventListener('mouseleave', () => {
+      targetRotateX = 0;
+      targetRotateY = 0;
+    });
+
+    function tiltLoop() {
+      currentRotateX += (targetRotateX - currentRotateX) * 0.08;
+      currentRotateY += (targetRotateY - currentRotateY) * 0.08;
+
+      if (currentMode === 'image' && realImg) {
+        realImg.style.transform = 'perspective(1000px) rotateX(' + currentRotateX + 'deg) rotateY(' + currentRotateY + 'deg) scale(1.04)';
+      } else if (currentMode === 'video' && video) {
+        video.style.transform = 'perspective(1000px) rotateX(' + (currentRotateX * 0.5) + 'deg) rotateY(' + (currentRotateY * 0.5) + 'deg) scale(1.02)';
+      }
+
+      requestAnimationFrame(tiltLoop);
+    }
+    tiltLoop();
+  })();
+  </script>
+</body>
+</html>
